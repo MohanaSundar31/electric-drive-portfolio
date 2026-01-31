@@ -1,22 +1,24 @@
 import { motion } from 'framer-motion';
-import { Zap, Heart } from 'lucide-react';
+import { Code2, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 border-t border-border bg-background">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+    <footer className="py-6 sm:py-8 border-t border-border bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <motion.a
             href="#home"
-            className="flex items-center gap-2 font-display text-lg font-bold"
+            className="flex items-center gap-2 font-display text-base sm:text-lg font-bold"
             whileHover={{ scale: 1.05 }}
           >
-            <Zap className="w-5 h-5 text-primary" />
+            <div className="p-1 bg-primary/20 rounded-md border border-primary/30">
+              <Code2 className="w-4 h-4 text-primary" />
+            </div>
             <span className="text-foreground">
-              MOTOR<span className="text-primary">DEV</span>
+              Port<span className="text-primary">folio</span>
             </span>
           </motion.a>
 

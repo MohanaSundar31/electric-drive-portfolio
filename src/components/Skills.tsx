@@ -74,8 +74,8 @@ const GaugeIndicator = ({ value, label }: { value: number; label: string }) => {
         />
         <defs>
           <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="hsl(185 100% 50%)" />
-            <stop offset="100%" stopColor="hsl(155 100% 50%)" />
+            <stop offset="0%" stopColor="hsl(155 80% 45%)" />
+            <stop offset="100%" stopColor="hsl(160 70% 50%)" />
           </linearGradient>
         </defs>
       </svg>
@@ -121,9 +121,9 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="skills" className="py-20 md:py-32 bg-card relative" ref={ref}>
+    <section id="skills" className="py-16 md:py-24 lg:py-32 bg-card relative" ref={ref}>
       {/* Background pattern */}
-      <div className="absolute inset-0 carbon-pattern opacity-30" />
+      <div className="absolute inset-0 dot-pattern opacity-20" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
